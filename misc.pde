@@ -5,6 +5,7 @@ color bwColor(int nIterations) {
 }
 
 color palletteColor(int nIterations) {
+  // https://stackoverflow.com/questions/369438/smooth-spectrum-for-mandelbrot-set-rendering
   return Color.HSBtoRGB(nIterations/256f, 1.f, nIterations/(nIterations+8f));
 }
 
